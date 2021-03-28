@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+
+<title>Restaurant</title>
+
+</h:head>
+
+<h:body>
+	<h1>Restautant</h1>
+	
+	<h:form>
+	
+		<h:outputLabel value="limite: " />
+		<h:inputText value="#{contador.limitePessoas}"/>
+		<br/>
+		<br/>
+		
+		<h:outputLabel value="Presentes: "/>
+		<h:outputText value="#{contador.quantPresente}"/>
+		<br/>
+		<br/>
+		
+		<h:outputLabel value="Total: " />
+		<h:outputText value="#{contador.quantPessoas}"/>	
+		<br/>
+		<br/>
+		
+		
+		<h:outputLabel>Entrada</h:outputLabel>
+		<h:inputText value="#{contador.quantPresente}"/>
+		<h:commandButton actionListener="#{contador.entrada}" value="Entrada"/>
+		
+	
+	</h:form>
+</h:body>
+
+</html>
