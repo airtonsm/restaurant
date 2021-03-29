@@ -42,14 +42,6 @@ public class ContadordePessoas {
 		this.quantPessoas = quantPessoas;
 	}
 	
-	
 
-	
-	public void entrada() {		
-		quantPresente += getQuantPresente();
-	}
-	
-	
-	
 
 }
