@@ -19,7 +19,7 @@ xmlns:h="http://java.sun.com/jsf/html">
 		<br/>
 		
 		<h:outputLabel value="Presentes: "/>
-		<h:outputText value="#{contador.quantPresente}"/>
+		<h:outputText value="#{beanConte.cont.quantPresente}"/>
 		<br/>
 		<br/>
 		
@@ -30,8 +30,8 @@ xmlns:h="http://java.sun.com/jsf/html">
 		
 		
 		<h:outputLabel>Entrada</h:outputLabel>
-		<h:inputText value="#{contador.quantPresente}"/>
-		<h:commandButton actionListener="#{contador.entrada}" value="Entrada"/>
+		<h:inputText value="#{beanConte.cont.quantPresente}"/>
+		<h:commandButton actionListener="#{beanConte.entrada}" value="Entrada"/>
 		
 	
 	</h:form>
